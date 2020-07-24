@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="10dp"
+    android:orientation="vertical"
+    android:id="@+id/parentLayout"
+    android:background="@drawable/recycler_view_shape"
+    android:paddingBottom="10dp">
+
+
+    <TextView
+        android:layout_margin="10dp"
+        android:textSize="16sp"
+        android:text="Test"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:layout_margin="10dp"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:text="INCOME TYPE"
+        android:id="@+id/transactionType"
+        android:layout_width="125dp"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@id/date"/>
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chipView"
+        android:layout_width="100dp"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        app:chipStartPadding="0dp"
+        android:textAlignment="center"
+        app:chipEndPadding="0dp"
+        android:layout_toEndOf="@id/transactionType"
+        android:text=""/>
+
+    <TextView
+        android:text="Amount"
+        android:layout_margin="10dp"
+        android:textSize="16sp"
+        android:textColor="@color/colorAccent"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/transactionAmount"
+        android:layout_alignParentEnd="true"/>
+</RelativeLayout>
